@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'findbugs'
+apply plugin: 'checkstyle'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+ext {
+    junitVersion            = "4.+"
+    seleniumVersion         = "2.+"
+}
+
+repositories { mavenCentral() }
+
+dependencies {
+    compile "org.seleniumhq.selenium:selenium-java:$seleniumVersion"
+    compile "junit:junit:$junitVersion"
+}
+
+

@@ -3,7 +3,6 @@ package com.imdb.charts;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-import org.junit.runner.JUnitCore;
 
 import com.imdb.BaseWebFixture;
 import com.imdb.pageObjects.charts.GenrePage;
@@ -52,9 +51,5 @@ public class Top250Test extends BaseWebFixture {
 					+ ") is not greater or equal to 1.",
 					actualNumberOfResults >= 1);
 		}
-	}
-
-	public static void main(String[] args) throws Exception {
-		JUnitCore.main("com.imdb.charts.Top250Test");
 	}
 }
